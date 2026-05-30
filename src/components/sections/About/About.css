@@ -598,3 +598,276 @@ MOBILE
     font-size: 48px;
   }
 }
+
+
+/* =========================
+VISION SECTION
+========================= */
+
+.thought-desktop {
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  gap: 20px;
+}
+
+/* =========================
+MAIN CARD
+========================= */
+
+.thought-main-card {
+  position: relative;
+  overflow: hidden;
+
+  background: linear-gradient(
+    135deg,
+    #102b63,
+    #0f2554
+  );
+
+  border-radius: 24px;
+
+  padding: 70px 70px 80px;
+  min-height: 520px;
+}
+
+.quote-mark {
+  color: #c58a37;
+  font-size: 100px;
+  line-height: 1;
+  font-family: serif;
+  margin-bottom: 20px;
+}
+
+.thought-main-card h2 {
+  position: relative;
+  z-index: 2;
+
+  color: white;
+  font-family: serif;
+
+  font-size: 68px;
+  line-height: 1.18;
+  font-weight: 400;
+
+  max-width: 980px;
+  width: 72%;
+
+  margin: 0;
+}
+
+.thought-divider {
+  width: 72px;
+  height: 2px;
+  background: #c58a37;
+  margin: 38px 0;
+}
+
+.thought-main-card p {
+  position: relative;
+  z-index: 2;
+
+  color: rgba(255,255,255,.92);
+
+  font-size: 20px;
+  line-height: 1.9;
+
+  max-width: 650px;
+  margin: 0;
+}
+
+.thought-signature {
+  display: inline-block;
+
+  margin-top: 30px;
+
+  color: #c58a37;
+
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.thought-building {
+  position: absolute;
+
+  right: -30px;
+  bottom: -10px;
+
+  width: 600px;
+  height: auto;
+
+  opacity: .16;
+  pointer-events: none;
+}
+
+.thought-birds {
+  position: absolute;
+
+  right: 90px;
+  top: 40px;
+
+  display: flex;
+  gap: 14px;
+
+  color: #c58a37;
+  opacity: .9;
+}
+
+/* =========================
+SIDE CARD
+========================= */
+
+.thought-side-card {
+  background: linear-gradient(
+    135deg,
+    #102b63,
+    #0f2554
+  );
+
+  border-radius: 24px;
+
+  padding: 34px 28px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.quote-mark.small {
+  font-size: 60px;
+  margin-bottom: 18px;
+}
+
+.thought-side-card h3 {
+  color: white;
+
+  font-family: serif;
+
+  font-size: 20px;
+  line-height: 1.7;
+  font-weight: 400;
+
+  margin: 0;
+}
+
+.thought-side-card .thought-divider {
+  margin: 28px 0;
+}
+
+.thought-side-card p {
+  color: rgba(255,255,255,.9);
+
+  font-size: 15px;
+  line-height: 1.9;
+
+  margin: 0;
+}
+
+.thought-side-card .thought-signature {
+  font-size: 18px;
+  margin-top: 24px;
+}
+
+
+/* =========================
+MOBILE CARD
+========================= */
+
+.thought-mobile-card {
+  display: none;
+
+  background: linear-gradient(
+    135deg,
+    #102b63,
+    #0f2554
+  );
+
+  border-radius: 24px;
+
+  padding: 28px 22px;
+
+  position: relative;
+  overflow: hidden;
+}
+
+.thought-mobile-card .quote-mark {
+  font-size: 34px;
+  line-height: 1;
+  margin-bottom: 12px;
+}
+
+.thought-mobile-card h2 {
+  color: white;
+  font-family: serif;
+
+  font-size: 18px;
+  line-height: 1.75;
+  font-weight: 400;
+
+  margin: 0;
+}
+
+.thought-mobile-card .thought-divider {
+  width: 50px;
+  height: 2px;
+
+  background: #c58a37;
+
+  margin: 18px 0;
+}
+
+.thought-mobile-card p {
+  color: rgba(255,255,255,.92);
+
+  font-size: 14px;
+  line-height: 1.9;
+
+  margin: 0;
+}
+
+.thought-mobile-card .thought-signature {
+  font-size: 16px;
+  margin-top: 16px;
+}
+
+/* =========================
+TABLET
+========================= */
+
+@media (max-width: 1024px) {
+
+  .thought-desktop {
+    display: none;
+  }
+
+  .thought-mobile-card {
+    display: block;
+  }
+}
+
+/* =========================
+MOBILE
+========================= */
+
+@media (max-width: 767px) {
+
+  .thought-mobile-card {
+    padding: 24px 18px;
+  }
+
+  .thought-mobile-card .quote-mark {
+    font-size: 10px;
+  }
+
+  .thought-mobile-card h2 {
+    font-size: 5px;
+    line-height: 1;
+  }
+
+  .thought-mobile-card p {
+    font-size: 10px;
+    line-height: 1;
+  }
+
+  .thought-mobile-card .thought-signature {
+    font-size: 12px;
+  }
+}
