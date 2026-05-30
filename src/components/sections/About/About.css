@@ -1,0 +1,600 @@
+/* =========================
+ABOUT INTRO
+========================= */
+
+.about-intro {
+position: relative;
+overflow: hidden;
+background: #f8f4ee;
+padding: 120px 60px;
+}
+
+.about-intro-container {
+position: relative;
+z-index: 2;
+/* max-width: 700px; */
+}
+
+.about-content {
+  max-width: 620px;
+}
+
+.section-label {
+display: inline-block;
+margin-bottom: 22px;
+
+font-size: 12px;
+font-weight: 600;
+letter-spacing: 6px;
+text-transform: uppercase;
+
+color: #c58a37;
+}
+
+.about-heading {
+font-family: serif;
+font-size: 88px;
+line-height: 0.95;
+font-weight: 500;
+
+color: #1d2d50;
+}
+
+.about-description {
+margin-top: 42px;
+
+max-width: 620px;
+
+font-size: 18px;
+line-height: 2;
+
+color: #5f6675;
+}
+
+.about-stats {
+  display: flex;
+  gap: 22px;
+  margin-top: 55px;
+}
+
+/* =========================
+   STATS SECTION
+========================= */
+.about-stat {
+  width: 190px;
+  height: 190px;
+
+  background: rgba(255,255,255,.82);
+  backdrop-filter: blur(14px);
+
+  border: 1px solid #ece3d5;
+  border-radius: 24px;
+
+  padding: 28px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+
+  transition:
+    transform .35s ease,
+    box-shadow .35s ease;
+}
+
+.about-stat:hover {
+  transform: translateY(-8px);
+
+  box-shadow:
+    0 20px 40px rgba(0,0,0,.06);
+}
+
+.stat-icon {
+  width: 42px;
+  height: 42px;
+
+  color: #c58a37;
+
+  margin-bottom: 18px;
+}
+
+.about-stat h3 {
+  font-size: 56px;
+  line-height: 1;
+
+  margin: 0;
+
+  color: #c58a37;
+  font-weight: 500;
+}
+
+.about-stat p {
+  margin-top: 10px;
+
+  font-size: 15px;
+  line-height: 1.5;
+
+  color: #5f6675;
+}
+
+
+/* =========================
+BUILDING ARTWORK
+========================= */
+.about-illustration {
+  position: absolute;
+
+  right: -150px;
+  bottom: -80px;
+
+  z-index: 1;
+  pointer-events: none;
+}
+
+.about-building {
+  width: 780px;
+  height: auto;
+
+  opacity: 0.12;
+}
+
+/* =========================
+TABLET
+========================= */
+
+@media (max-width: 1024px) {
+
+  .about-intro {
+    padding: 100px 30px;
+  }
+
+  .about-intro-container {
+    text-align: center;
+  }
+
+  .about-content {
+    max-width: 100%;
+  }
+
+  .about-description {
+    margin: 32px auto 0;
+  }
+
+  .about-stats {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .about-heading {
+    font-size: 64px;
+  }
+
+  .about-illustration {
+    right: -80px;
+    bottom: -30px;
+  }
+
+  .about-building {
+    width: 650px;
+    opacity: 0.18;
+  }
+  
+}
+
+/* =========================
+MOBILE
+========================= */
+
+@media (max-width: 767px) {
+
+.about-intro {
+padding: 80px 18px;
+}
+
+.section-label {
+font-size: 10px;
+letter-spacing: 4px;
+}
+
+.about-heading {
+font-size: 52px;
+line-height: 1;
+}
+
+.about-description {
+margin-top: 24px;
+font-size: 15px;
+line-height: 1.9;
+}
+
+
+  .about-stat {
+    width: 100%;
+    height: auto;
+
+    padding: 20px 22px;
+
+    flex-direction: row;
+    align-items: center;
+    gap: 18px;
+
+    text-align: left;
+  }
+
+  .stat-icon {
+    width: 38px;
+    height: 38px;
+
+    margin-bottom: 0;
+    flex-shrink: 0;
+  }
+
+  .about-stat h3 {
+    font-size: 40px;
+    margin-bottom: 4px;
+  }
+
+
+.about-illustration {
+right: -60px;
+bottom: -20px;
+}
+
+.about-building {
+width: 340px;
+opacity: 0.14;
+}
+}
+
+
+
+
+
+/* =========================
+JOURNEY SECTION
+========================= */
+
+.journey-section {
+  background: #f8f4ee;
+  padding: 120px 60px;
+}
+
+.journey-header {
+  text-align: center;
+  margin-bottom: 90px;
+}
+
+.journey-header span {
+  color: #c58a37;
+  letter-spacing: 5px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.journey-header h2 {
+  margin-top: 18px;
+  font-size: 72px;
+  line-height: 1.05;
+  color: #1d2d50;
+  font-family: serif;
+}
+
+/* =========================
+DESKTOP TIMELINE
+========================= */
+
+.journey-desktop {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 3.2rem;
+  margin-top: 40px;
+  padding-top: 80px;
+}
+
+.journey-desktop::before {
+  content: "";
+  position: absolute;
+
+  left: 8%;
+  right: 8%;
+
+  top: 125px; /* center of 90px circles */
+
+  height: 3px;
+
+  background: linear-gradient(
+    to right,
+    #c58a37,
+    #d9b06a
+  );
+
+  z-index: 1;
+}
+
+.journey-svg,
+.journey-path {
+  display: none;
+}
+
+.milestone {
+  position: relative;
+  flex: 0 0 220px;
+  text-align: center;
+  z-index: 2;
+}
+
+.circle {
+  width: 90px;
+  height: 90px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 24px;
+
+  position: relative;
+  z-index: 2;
+
+  border-radius: 50%;
+  background: #fff;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.circle svg {
+  width: 34px;
+  height: 34px;
+}
+
+.won .circle {
+  border: 3px solid #4ea85f;
+  color: #4ea85f;
+}
+
+.won .circle svg {
+  color: #4ea85f;
+}
+
+.lost .circle {
+  border: 3px solid #d9534f;
+}
+.lost .circle svg {
+  color: #d9534f;
+}
+.historic {
+  margin-top: -12px;
+}
+
+.historic .circle {
+  width: 130px;
+  height: 130px;
+
+  border: 4px solid #c58a37;
+  
+  background: #1d2d50;
+  color: white;
+
+  box-shadow: 0 0 40px rgba(197,138,55,.25);
+}
+
+.historic-rays {
+  position: absolute;
+  left: 50%;
+  top: -35px;
+
+  transform: translateX(-50%);
+
+  width: 220px;
+  height: 220px;
+
+  border-radius: 50%;
+
+  background:
+    radial-gradient(
+      rgba(197,138,55,.18),
+      transparent 70%
+    );
+
+  z-index: -1;
+}
+
+.milestone h3 {
+  font-size: 42px;
+  color: #c58a37;
+  margin-bottom: 10px;
+}
+
+.milestone h4 {
+  color: #1d2d50;
+  font-size: 28px;
+  margin-bottom: 16px;
+}
+
+.milestone ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.milestone li {
+  font-size: 14px;
+  line-height: 1.7;
+  color: #5f6675;
+  margin-bottom: 8px;
+}
+
+.badge {
+  display: inline-block;
+  margin-top: 16px;
+
+  padding: 7px 16px;
+
+  border-radius: 999px;
+
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: .5px;
+}
+
+.badge.won {
+  background: rgba(78,168,95,.12);
+  color: #2f9e44;
+  border: 1px solid rgba(78,168,95,.25);
+}
+
+.badge.lost {
+  background: rgba(224, 49, 49, 0.12);
+  color: #d9534f;
+  border: 1px solid rgba(224, 49, 49, 0.25);
+}
+
+.badge.historic {
+  background: #1d2d50;
+  color: white;
+}
+
+.m2025 h2 {
+  font-size: 92px;
+  color: #c58a37;
+  line-height: 1;
+  margin-bottom: 10px;
+}
+
+.m2025 h3 {
+  font-size: 42px;
+  color: #1d2d50;
+}
+
+.votes {
+  margin-top: 14px;
+  font-size: 34px;
+  color: #c58a37;
+  font-weight: 600;
+}
+
+/* =========================
+MOBILE TIMELINE
+========================= */
+
+.journey-mobile {
+  display: none;
+}
+
+/* =========================
+TABLET + MOBILE
+========================= */
+
+@media (max-width: 1024px) {
+
+  .journey-desktop {
+    display: none;
+  }
+
+  .journey-mobile {
+    display: block;
+  }
+
+  .mobile-step {
+    position: relative;
+    display: flex;
+    gap: 18px;
+
+    padding-left: 12px;
+    margin-bottom: 60px;
+  }
+
+  .mobile-step::before {
+    content: "";
+
+    position: absolute;
+
+    left: 35px;
+    top: 52px;
+
+    width: 2px;
+    height: calc(100% + 45px);
+
+    background: #c58a37;
+  }
+
+  .mobile-step:last-child::before {
+    display: none;
+  }
+
+  .mobile-icon {
+    width: 48px;
+    height: 48px;
+
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    background: white;
+    border: 2px solid #c58a37;
+
+    position: relative;
+    z-index: 2;
+  }
+
+  .mobile-icon svg {
+    width: 22px;
+    height: 22px;
+  }
+
+  .mobile-content h3 {
+    font-size: 28px;
+    color: #c58a37;
+    margin-bottom: 4px;
+  }
+
+  .mobile-content h4 {
+    color: #1d2d50;
+    margin-bottom: 12px;
+  }
+
+  .mobile-content ul {
+    margin-top: 10px;
+    padding-left: 0;
+    list-style: none;
+  }
+
+  .mobile-content li {
+    font-size: 14px;
+    line-height: 1.8;
+    color: #5f6675;
+    margin-bottom: 6px;
+  }
+    .badge {
+    margin-top: 10px;
+    padding: 5px 12px;
+    font-size: 10px;
+  }
+}
+
+/* =========================
+MOBILE
+========================= */
+
+@media (max-width: 767px) {
+
+  .journey-section {
+    padding: 80px 18px;
+  }
+
+  .journey-header {
+    margin-bottom: 60px;
+  }
+
+  .journey-header h2 {
+    font-size: 48px;
+  }
+}
